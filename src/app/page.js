@@ -83,6 +83,21 @@ const Page = () => {
 
 
 
+  const post = [
+    {
+      username: "matt",
+      image: "754",
+      like: "1.1",
+      commetnt: "1000",
+      comment: "self taught pastry .........",
+      link: "google.com"
+    }
+  ]
+
+  console.log(post)
+
+
+
 
 
 
