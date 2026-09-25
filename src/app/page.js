@@ -1,7 +1,4 @@
 
-
-
-
 import React from 'react';
 
 const Page = () => {
@@ -55,9 +52,9 @@ const Page = () => {
   const insta = [
     {
       name: "matt",
-      posts: "754",
-      followers: "1.1",
-      following: "1000",
+      posts: 754,
+      followers: 1.1,
+      following: 1000,
       bio: "self taught pastry .........",
       link: "google.com"
     }
@@ -86,22 +83,20 @@ const Page = () => {
 
 
 
-
-
-
-  function checkNumber(num) {
-    if (num > 0) {
+  function check(n) {
+    if (n > 0) {
       console.log("Positive");
-    } else if (num < 0) {
+    } else if (n < 0) {
       console.log("Negative");
     } else {
       console.log("Zero");
     }
   }
+  check(5);
+  check(-3);
+  check(0);
 
-  checkNumber(5);
-  checkNumber(-3);
-  checkNumber(0);
+
 
 
   function largest(a, b, c) {
@@ -115,6 +110,8 @@ const Page = () => {
   }
 
   console.log(largest(10, 25, 15));
+
+
 
 
 
@@ -146,19 +143,61 @@ const Page = () => {
     return false;
   }
 
-  const numbers = [10, 20, 30, 40, 50];
+  const numb = [10, 20, 30, 40, 50];
 
-  console.log(findNumber(numbers, 30)); // true
-  console.log(findNumber(numbers, 25)); // false
-
-
+  console.log(findNumber(numbers, 30));
+  console.log(findNumber(numbers, 25));
 
 
 
 
 
+  const Ytube = [
+    {
+      V_name: "Introducing Aeries......",
+      Cname: "TATA.CARS",
+      S_count: 511000,
+      like: 1100,
+      views: 4161,
+      date: "sept 25",
+      year: 2026,
 
+      hashtags1:[
+        {
+          H1: "Aeris",
+          H2: "DefeatBoring",
+          H3: "TataCars"
+        }
+      ],
 
+      description: "the descriptions..........",
+      link: "yt.com",
+
+      hashtags2:[
+        {
+          H1: "TataAeris",
+          H2: "DefeatBoring",
+          H3: "TataCars",
+          H4: "NothingToFear"
+        }
+      ],
+
+      comments:[
+        {
+        username:"Aby",
+        comment_text:"Hello im aby"
+        },
+        {
+          username:"A",
+          comment_text:"Hello im aby"
+        }
+      ],
+
+      link: "google.com"
+    }
+  ]
+
+  console.log(Ytube)
 
 
 
