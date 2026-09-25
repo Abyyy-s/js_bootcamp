@@ -52,19 +52,6 @@ const Page = () => {
   ]
   console.log(arr)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   const insta = [
     {
       name: "matt",
@@ -96,6 +83,25 @@ const Page = () => {
 
   console.log(post)
 
+
+
+
+
+
+
+  function checkNumber(num) {
+    if (num > 0) {
+      console.log("Positive");
+    } else if (num < 0) {
+      console.log("Negative");
+    } else {
+      console.log("Zero");
+    }
+  }
+
+  checkNumber(5);
+  checkNumber(-3);
+  checkNumber(0);
 
 
 
