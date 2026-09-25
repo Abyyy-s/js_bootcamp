@@ -104,6 +104,53 @@ const Page = () => {
   checkNumber(0);
 
 
+  function largest(a, b, c) {
+    if (a >= b && a >= c) {
+      return a;
+    } else if (b >= a && b >= c) {
+      return b;
+    } else {
+      return c;
+    }
+  }
+
+  console.log(largest(10, 25, 15));
+
+
+
+  function countEven(arr) {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        count++;
+      }
+    }
+
+    return count;
+  }
+
+  const numbers = [1, 2, 4, 7, 8, 10];
+
+  console.log(countEven(numbers));
+
+
+
+  function findNumber(arr, num) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === num) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  const numbers = [10, 20, 30, 40, 50];
+
+  console.log(findNumber(numbers, 30)); // true
+  console.log(findNumber(numbers, 25)); // false
+
 
 
 
