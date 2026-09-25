@@ -207,12 +207,15 @@ const Page = () => {
 
 
 
-
+const naam="Abyyy"
 
 
   return (
     <div>
-      Page
+      <div>
+         <h1 className='text-8xl text-amber-300'>This is my first next.js project</h1>
+         <p className='text-6xl text-blue-800'>{naam}</p>
+      </div>
     </div>
   );
 };
