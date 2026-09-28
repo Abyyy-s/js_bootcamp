@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Card from './components/Card';
 
 const Page = () => {
 
@@ -153,52 +154,58 @@ const Page = () => {
 
 
   const Ytube =
+  {
+    V_name: "Introducing Aeries......",
+    Cname: "TATA.CARS",
+    S_count: 511000,
+    like: 1100,
+    views: 4161,
+    date: "sept 25",
+    year: 2026,
+
+    hashtags1:
     {
-      V_name: "Introducing Aeries......",
-      Cname: "TATA.CARS",
-      S_count: 511000,
-      like: 1100,
-      views: 4161,
-      date: "sept 25",
-      year: 2026,
-
-      hashtags1:
-        {
-          H1: "Aeris",
-          H2: "DefeatBoring",
-          H3: "TataCars"
-        }
-      ,
-
-      description: "the descriptions..........",
-      link: "yt.com",
-
-      hashtags2:[
-        {
-          H1: "TataAeris",
-          H2: "DefeatBoring",
-          H3: "TataCars",
-          H4: "NothingToFear"
-        }
-      ],
-
-      comments:[
-        {
-        username:"Aby",
-        comment_text:"Hello im aby"
-        },
-        {
-          username:"A",
-          comment_text:"Hello im aby"
-        }
-      ],
-
-      link: "google.com"
+      H1: "Aeris",
+      H2: "DefeatBoring",
+      H3: "TataCars"
     }
+    ,
+
+    description: "the descriptions..........",
+    link: "yt.com",
+
+    hashtags2: [
+      {
+        H1: "TataAeris",
+        H2: "DefeatBoring",
+        H3: "TataCars",
+        H4: "NothingToFear"
+      }
+    ],
+
+    comments: [
+      {
+        username: "Aby",
+        comment_text: "Hello im aby"
+      },
+      {
+        username: "A",
+        comment_text: "Hello im aby"
+      }
+    ],
+
+    link: "google.com"
+  }
 
 
   console.log(Ytube)
 
+  const yvideo = {
+    name: " 1k challemge.......",
+    channel: " Mr.Beast",
+    views: 1099092,
+    Data: "aa"
+  }
 
 
 
@@ -206,16 +213,17 @@ const Page = () => {
 
 
 
-
-const naam="Abyyy"
+  const naam = "Abyyy"
 
 
   return (
     <div>
       <div>
-         <h1 className='text-8xl text-amber-300'>This is my first next.js project</h1>
-         <p className='text-6xl text-blue-800'>{naam}</p>
-         <p className='text-6xl text-blue-800'>{Ytube.V_name}</p>
+        <h1 className='text-8xl text-amber-300'>This is my first next.js project</h1>
+        <p className='text-6xl text-blue-800'>{naam}</p>
+        <p className='text-6xl text-blue-800'>{Ytube.V_name}</p>
+
+        <Card data={yvideo} />
 
       </div>
     </div>
