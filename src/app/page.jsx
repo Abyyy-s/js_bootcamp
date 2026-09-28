@@ -152,7 +152,7 @@ const Page = () => {
 
 
 
-  const Ytube = [
+  const Ytube =
     {
       V_name: "Introducing Aeries......",
       Cname: "TATA.CARS",
@@ -162,13 +162,13 @@ const Page = () => {
       date: "sept 25",
       year: 2026,
 
-      hashtags1:[
+      hashtags1:
         {
           H1: "Aeris",
           H2: "DefeatBoring",
           H3: "TataCars"
         }
-      ],
+      ,
 
       description: "the descriptions..........",
       link: "yt.com",
@@ -195,7 +195,7 @@ const Page = () => {
 
       link: "google.com"
     }
-  ]
+
 
   console.log(Ytube)
 
@@ -215,9 +215,11 @@ const naam="Abyyy"
       <div>
          <h1 className='text-8xl text-amber-300'>This is my first next.js project</h1>
          <p className='text-6xl text-blue-800'>{naam}</p>
+         <p className='text-6xl text-blue-800'>{Ytube.V_name}</p>
+
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Page;
